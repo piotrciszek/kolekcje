@@ -4,3 +4,15 @@ Stwórz listę Integerów. Wykonaj zadania:
 - dodaj do listy 5 elementów losowych
 - wypisz elementy
 Sprawdź działanie aplikacji.
+
+Zadanie2
+Stwórz oddzielnego maina, a w nim kolejną listę integerów. Wykonaj zadania:
+- dodaj do listy 10 liczb losowych
+- oblicz sumę elementów na liście (wypisz ją)
+- oblicz średnią elementów na liście (wypisz ją)
+- podaj medianę elementów na liście (wypisz ją)
+- znajdź największy oraz najmniejszy element na liście (znajdź go posługując się pętlą for)
+- wypisz indeks elementu
+- znajdź największy oraz najmniejszy element na liście (znajdź go pętlą for, a następnie
+określ index posługując się metodą indexOf)
+Sprawdź działanie aplikacji.

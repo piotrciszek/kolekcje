@@ -16,3 +16,46 @@ Stwórz oddzielnego maina, a w nim kolejną listę integerów. Wykonaj zadania:
 - znajdź największy oraz najmniejszy element na liście (znajdź go pętlą for, a następnie
 określ index posługując się metodą indexOf)
 Sprawdź działanie aplikacji.
+
+Zadanie3
+Stwórz oddzielnego maina, a w nim kolejną listę String'ów. Wykonaj zadania:
+- dodaj do listy elementy 10030, 3004, 4000, 12355, 12222, 67888, 111200, 225355,
+2222, 1111, 3546, 138751, 235912 (jako stringi) (dodaj je posługując się metodą
+Arrays.asList())
+- określ indeks elementu 138751 posługując się metodą indexOf
+- sprawdź czy istnieje na liście obiekt 67888 metodą contains (wynik wypisz na ekran)
+- sprawdź czy istnieje na liście obiekkt 67889 metodą contains (wynik wypisz na ekran)
+- usuń z listy obiekt 67888 oraz 67889 (metoda remove)
+- wykonaj ponownie powyższe sprawdzenia.
+- iteruj całą listę, wypisz elementy na ekran (a. w jednej linii, b. każdy element w
+oddzielnej linii).
+Sprawdź działanie aplikacji.
+
+Zadanie4
+Stwórz oddzielnego maina, a w nim kolejną listę String'ów. Wykonaj zadania:
+- dodaj do listy losowe 100 elementów z zakresu 0-100.
+- oblicz średnią liczb
+- usuń wszystkie liczby powyżej średniej
+- wypisz wszystkie liczby
+- wykonaj kopię listy do tablicy
+Sprawdź działanie aplikacji.
+
+Zadanie5
+Stwórz aplikację, a w niej klasę Dziennik. Stwórz również klasę Student. Klasa Student
+powinna:
+- posiadać listę ocen studenta (List<Double>)
+- posiadać (pole) numer indeksu studenta
+- posiadać (pole) imię studenta
+- posiadać (pole) nazwisko studenta
+Dziennik powinna:
+- posiadać (jako pole) listę Studentów.
+- posiadać metodę 'dodajStudenta(Student):void' do dodawania nowego studenta do
+dziennika
+- posiadać metodę 'usuńStudenta(Student):void' do usuwania studenta
+- posiadać metodę 'usuńStudenta(int):void' do usuwania studenta po jego numerze w
+liście
+- posiadać metodę 'zwróćStudenta(int):Student' która jako parametr przyjmuje numer
+studenta, a w wyniku zwraca konkretnego studenta.
+- posiadać metodę 'podajŚredniąStudenta(int):double' która przyjmuje indeks studenta i
+zwraca średnią ocen studenta.
+- posiadać metodę 'podajStudentówZagrożonych():List<Student>'

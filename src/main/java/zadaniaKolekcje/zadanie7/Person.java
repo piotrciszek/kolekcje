@@ -17,6 +17,16 @@ public class Person {
         this.isMale = isMale;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", isMale=" + isMale +
+                '}';
+    }
+
     public String getName() {
         return name;
     }

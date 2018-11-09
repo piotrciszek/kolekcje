@@ -1,6 +1,7 @@
 package zadaniaKolekcje.zadanie7;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Programmer {
 
@@ -10,6 +11,17 @@ public class Programmer {
     public Programmer(Person person, List<String> languageList) {
         this.person = person;
         this.languageList = languageList;
+    }
+
+    public Programmer() {
+    }
+
+    @Override
+    public String toString() {
+        return "Programmer{" +
+                "person=" + person +
+                ", languageList=" + languageList +
+                '}';
     }
 
     public Person getPerson() {
@@ -26,5 +38,9 @@ public class Programmer {
 
     public void setLanguageList(List<String> languageList) {
         this.languageList = languageList;
+    }
+
+    public List<Programmer> maleProgrammer(List<Programmer> programmers){
+        return programmers.stream().filter(u -> u.getPerson().isMale()).collect(Collectors.toList());
     }
 }

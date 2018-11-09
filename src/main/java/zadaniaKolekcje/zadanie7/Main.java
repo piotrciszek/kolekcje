@@ -39,5 +39,6 @@ public class Main {
         List<Programmer> programmers = Arrays.asList(programmer1, programmer2, programmer3, programmer4, programmer5,
                 programmer6, programmer7, programmer8, programmer9);
 
+        System.out.println(new Programmer().maleProgrammer(programmers));
     }
 }

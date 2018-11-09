@@ -59,3 +59,14 @@ studenta, a w wyniku zwraca konkretnego studenta.
 - posiadać metodę 'podajŚredniąStudenta(int):double' która przyjmuje indeks studenta i
 zwraca średnią ocen studenta.
 - posiadać metodę 'podajStudentówZagrożonych():List<Student>'
+
+Zadanie6
+6.Napisz klasę person, która ma pola: firstName, lastName, age oraz isMale.
+Mając listę osób i korzystając ze streamów:
+a) uzyskaj listę mężczyzn
+b) uzyskaj listę dorosłych kobiet
+c) uzyskaj Optional<Person> z dorosłym Jackiem
+d) uzyskaj listę wszystkich nazwisk osób, które są w przedziale wiekowym: 15-19
+e)* uzyskaj sumę wieku wszystkich osób
+f)* uzyskaj średnią wieku wszystkich mężczyzn
+g)** znajdź nastarszą osobę w liście

@@ -70,3 +70,17 @@ d) uzyskaj listę wszystkich nazwisk osób, które są w przedziale wiekowym: 15
 e)* uzyskaj sumę wieku wszystkich osób
 f)* uzyskaj średnią wieku wszystkich mężczyzn
 g)** znajdź nastarszą osobę w liście
+
+Zadanie7
+7. Stwórz klasę Programmer, która ma klasę Person jako pole. Poza tym, posiada listę
+języków, którymi się posługuje. Mogą być one reprezentowane przez klasę String.
+Mając listę programistów i korzystając ze streamów:
+a) uzyskaj listę programistów, którzy są mężczyznami
+b) uzyskaj listę niepełnoletnich programistów (obydwóch płci), którzy piszą w Cobolu
+c) uzyskaj listę programistów, którzy znają więcej, niż jeden język programowania
+d) uzyskaj listę programistek, które piszą w Javie i Cpp
+e) uzyskaj listę męskich imion
+f) uzyskaj set wszystkich języków opanowanych przez programistów
+g) uzyskaj listę nazwisk programistów, którzy znają więcej, niż dwa języki
+h) sprawdź, czy istnieje chociaż jedna osoba, która nie zna żadnego języka
+i)* uzyskaj ilość wszystkich języków opanowanych przez programistki

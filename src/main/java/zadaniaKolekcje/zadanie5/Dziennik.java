@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Dziennik {
-    List<Student> studentList;
+    List<Student> studentList = new ArrayList<>();
 
     public List<Student> getStudentList() {
         return studentList;
@@ -43,7 +43,7 @@ public class Dziennik {
     public List<Student> podajStudentowZagrozonych(){
         List<Student> listaZagrozonych = new ArrayList<>();
         for(int i = 0; i < studentList.size(); i++){
-            if(studentList.get(i).getListaOcen().contains(2)){
+            if(studentList.get(i).getListaOcen().contains(2.0)){
                 listaZagrozonych.add(studentList.get(i));
             }
         }

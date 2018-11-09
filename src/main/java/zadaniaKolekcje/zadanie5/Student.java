@@ -15,6 +15,16 @@ public class Student {
         this.lastName = lastName;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "listaOcen=" + listaOcen +
+                ", numerIndeksu=" + numerIndeksu +
+                ", imie='" + imie + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
     public List<Double> getListaOcen() {
         return listaOcen;
     }

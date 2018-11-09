@@ -39,6 +39,18 @@ public class Main {
         List<Programmer> programmers = Arrays.asList(programmer1, programmer2, programmer3, programmer4, programmer5,
                 programmer6, programmer7, programmer8, programmer9);
 
+
+
         System.out.println(new Programmer().maleProgrammer(programmers));
+
+        Programmer programmer = new Programmer();
+
+        System.out.println(programmer.cobolMinor(programmers));
+        System.out.println(programmer.moreThanOneLanguage(programmers));
+        System.out.println(programmer.femaleWhosWriteInJavaAndCpp(programmers));
+        System.out.println(programmer.getMaleNames(programmers));
+        System.out.println(programmer.getAllLanguages(programmers));
+        System.out.println(programmer.getLastNameProgrammersWithMoreThanTwoLanguages(programmers));
+        /*h i j do zrobienia, f do poprawienia*/
     }
 }

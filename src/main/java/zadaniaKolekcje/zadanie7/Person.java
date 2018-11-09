@@ -61,4 +61,5 @@ public class Person {
     public List<Person> onlyMale(List<Person> personList){
         return personList.stream().filter(u -> u.isMale).collect(Collectors.toList());
     }
+
 }

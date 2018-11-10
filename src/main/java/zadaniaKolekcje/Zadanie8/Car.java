@@ -1,6 +1,8 @@
 package zadaniaKolekcje.Zadanie8;
 
 import java.time.LocalDate;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Car {
     private CarBrand marka;
@@ -23,6 +25,9 @@ public class Car {
         this.mocSilnika = mocSilnika;
         this.rokProdukcji = rokProdukcji;
         this.automat = automat;
+    }
+
+    public Car() {
     }
 
     public CarBrand getMarka() {
@@ -95,5 +100,36 @@ public class Car {
 
     public void setAutomat(boolean automat) {
         this.automat = automat;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "marka=" + marka +
+                ", nazwa='" + nazwa + '\'' +
+                ", typ=" + typ +
+                ", spalanie=" + spalanie +
+                ", pojemnosc=" + pojemnosc +
+                ", iloscMiejsc=" + iloscMiejsc +
+                ", mocSilnika=" + mocSilnika +
+                ", rokProdukcji=" + rokProdukcji +
+                ", automat=" + automat +
+                '}';
+    }
+
+
+    public List<Car> getStarszeNiz(List<Car> cars,LocalDate date){
+        return cars.stream().filter(u -> u.getRokProdukcji().isBefore(date))
+                .collect(Collectors.toList());
+    }
+
+    public List<Car> getOMarce(List<Car> cars, CarBrand marka){
+        return cars.stream().filter(u -> u.getMarka().equals(marka))
+                .collect(Collectors.toList());
+    }
+
+    public List<Car> getPosortowanePoSpalaniu(List<Car> cars){
+        return cars.stream().sorted((u1,u2) -> Double.compare(u1.getSpalanie(),u2.getSpalanie()))
+                .collect(Collectors.toList());
     }
 }

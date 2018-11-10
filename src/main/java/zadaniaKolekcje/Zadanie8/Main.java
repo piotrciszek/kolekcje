@@ -16,6 +16,7 @@ public class Main {
         Car car7 = new Car(CarBrand.MERCEDES, "Klasa E", CarType.KOMBI, 9.0, 2.8, 5, 110, LocalDate.of(2014, 1, 1), true);
         Car car8 = new Car(CarBrand.MAZDA, "6", CarType.SEDAN, 11.5, 2.2, 5, 80, LocalDate.of(2009, 1, 1), true);
 
+        List<Car> carList = Arrays.asList(car1, car2, car3, car4, car5, car6, car7, car8);
 
         CarOffert carOffert1 = new CarOffert(car1, 60000.00, 300.00);
         CarOffert carOffert2 = new CarOffert(car2, 25000.00, 250.00);
@@ -26,13 +27,18 @@ public class Main {
         CarOffert carOffert7 = new CarOffert(car7, 55000.00, 280.00);
         CarOffert carOffert8 = new CarOffert(car8, 34000.00, 200.00);
 
-        List<CarOffert> carOffertList = Arrays.asList(carOffert1, carOffert2, carOffert3, carOffert4, carOffert5, carOffert6, carOffert7, carOffert8);
+        CarShop carShop = new CarShop();
 
-        CarShop carShop = new CarShop("Lista", carOffertList);
+        //List<CarOffert> carOffertList = Arrays.asList(carOffert1, carOffert2, carOffert3, carOffert4, carOffert5, carOffert6, carOffert7, carOffert8);
+        carShop.addAllCarOffers(carOffert1, carOffert2, carOffert3, carOffert4, carOffert5, carOffert6, carOffert7, carOffert8);
+
+        System.out.println(carShop.getCarOfferts());
 
 
-
-
+        Car car = new Car();
+        System.out.println(car.getStarszeNiz(carList, LocalDate.of(2011, 1, 1)));
+        System.out.println(car.getOMarce(carList, CarBrand.MAZDA));
+        System.out.println(car.getPosortowanePoSpalaniu(carList));
 
     }
 }

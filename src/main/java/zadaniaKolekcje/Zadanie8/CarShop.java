@@ -12,6 +12,9 @@ public class CarShop {
         this.carOfferts = carOfferts;
     }
 
+    public CarShop() {
+    }
+
     public String getNazwa() {
         return nazwa;
     }
@@ -29,9 +32,17 @@ public class CarShop {
     }
 
     public void addAllCarOffers(CarOffert... carOffert){
-        for (CarOffert z: carOfferts){
+        for (CarOffert z: carOffert){
             this.carOfferts.add(z);
         }
     }
 
+
+    @Override
+    public String toString() {
+        return "CarShop{" +
+                "nazwa='" + nazwa + '\'' +
+                ", carOfferts=" + carOfferts +
+                '}';
+    }
 }

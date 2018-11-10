@@ -34,4 +34,13 @@ public class CarOffert {
     public void setCenaNajmu(double cenaNajmu) {
         this.cenaNajmu = cenaNajmu;
     }
+
+    @Override
+    public String toString() {
+        return "CarOffert{" +
+                "car=" + car +
+                ", cenaZakupu=" + cenaZakupu +
+                ", cenaNajmu=" + cenaNajmu +
+                '}';
+    }
 }

@@ -51,6 +51,8 @@ public class Main {
         System.out.println(programmer.getMaleNames(programmers));
         System.out.println(programmer.getAllLanguages(programmers));
         System.out.println(programmer.getLastNameProgrammersWithMoreThanTwoLanguages(programmers));
-        /*h i j do zrobienia, f do poprawienia*/
+        System.out.println(programmer.isExistAnyPersonWhosDoesnyKnowAnyLanguage(programmers));
+        System.out.println(programmer.getAllLanguagesKnownByFamales(programmers));
+
     }
 }

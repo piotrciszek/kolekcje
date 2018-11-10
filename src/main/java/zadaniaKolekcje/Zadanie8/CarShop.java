@@ -27,4 +27,11 @@ public class CarShop {
     public void setCarOfferts(List<CarOffert> carOfferts) {
         this.carOfferts = carOfferts;
     }
+
+    public void addAllCarOffers(CarOffert... carOffert){
+        for (CarOffert z: carOfferts){
+            this.carOfferts.add(z);
+        }
+    }
+
 }
